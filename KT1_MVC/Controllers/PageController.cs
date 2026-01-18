@@ -9,9 +9,10 @@ namespace KT1_MVC.Controllers
             return View();
         }
 
+        [Route("Page/Greet/{name=Alex}")]
         public IActionResult Greet(string name)
         {
-            ViewData["name"] = name ?? "Alex";
+            ViewData["name"] = name;
             return View();
         }
 

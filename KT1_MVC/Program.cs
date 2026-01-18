@@ -20,10 +20,10 @@ app.UseAuthorization();
 
 app.UseStaticFiles();
 
-app.MapControllerRoute(
-    name: "Greet",
-    pattern: "Page/Greet/{name}",
-    defaults: new { controller = "Page", action = "Greet" });
+//app.MapControllerRoute(
+//    name: "Greet",
+//    pattern: "Page/Greet/{name}",
+//    defaults: new { controller = "Page", action = "Greet" });
 
 app.MapControllerRoute(
     name: "default",
